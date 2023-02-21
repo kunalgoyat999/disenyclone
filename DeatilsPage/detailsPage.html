@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Details Page</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="detailsPage.css" />
+  </head>
+  <body>
+
+    <nav class="navbar">
+      <i class="fa-solid fa-bars" id="icon"></i>
+      <img
+        src="https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg"
+        class="brand-logo"
+        alt=""
+      />
+      <button class="sub-btn1">Subscribe</button>
+      <ul class="nav-links">
+        <li class="nav-items"><a href="#"> TV</a></li>
+        <li class="nav-items"><a href="#"> Movies</a></li>
+        <li class="nav-items"><a href="#"> Sporst</a></li>
+        <li class="nav-items"><a href="#"> Disney+</a></li>
+        <li class="nav-items">
+          <a href="#">
+            <img
+              src="https://www.hotstar.com/assets/4aa70ede8904e16b7630300c09219c8e.svg"
+            />
+          </a>
+        </li>
+      </ul>
+
+      <div class="right-container">
+        <input type="text" class="search-box" placeholder="Search" />
+        <button class="sub-btn">Subscribe</button>
+        <a href="#" class="login-link">login</a>
+      </div>
+    </nav>
+
+
+    <div id="wrapper">
+      
+
+      <br />
+      <br />
+
+      <div class="details-page">
+        <div class="masthead-wrapper">
+          <div id="detail">
+            <div class="detail-wrapper">
+              <div class="badge">
+                <span>Subscriber</span>
+              </div>
+              <div class="title">
+                <h1>Ghum Hai Kisikey Pyaar Meiin</h1>
+              </div>
+              <div class="content-meta">
+                <span>
+                  <span>1 Season</span>
+                  <span>763 Episodes</span>
+                  <span>Romance</span>
+                  <span>U/A 13+</span>
+                  <span>Hindi</span>
+                  <span>StarPlus</span>
+                </span>
+              </div>
+              <div class="content-description">
+                Retreating from tragedy, Virat ties the knot with Pakhi to
+                initiate new beginnings. Years later, when Sai returns, he is
+                forced to question his choices.
+              </div>
+
+              <div class="action-holder">
+                <div class="action">
+                  <div class="play-icon"></div>
+                  <div class="action-content">
+                    <div class="action-primary-txt">Watch Latest Episode</div>
+                    <div class="action-secondary-txt">
+                      <span>S1 E763</span>
+                      <span>16 FEB 2023</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="watch-share">
+                  <div class="watchlist">
+                    <i class="fa-solid fa-plus"></i>
+                    <p>WatchList</p>
+                  </div>
+                  <div class="share-icons">
+                    <i class="fa-solid fa-share-nodes"></i>
+                    <p>Share</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="img-container">
+            <img
+              src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/4252/1364252-h-e470328888ed"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="content-wrapper">
+          <h3>Episodes</h3>
+          <div class="episodes-container">
+            <button class="prev-btn">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="next-btn">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <div class="card-container">
+              <!-- <div class="card">
+                <img
+                  src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/1097/1471097-h-bb57172934ff"
+                  alt=""
+                  class="card-img"
+                />
+
+                <div class="card-body">
+                  <div class="action-content">
+                    <div class="action-secondary-txt">
+                      <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                      <span class="episode-no">S1 E763</span>
+                      <span class="episode-date">16 FEB 2023</span>
+                      <div class="hover-txt">
+                        <button class="hover-btn"><i class="fa-solid fa-plus"></i>Add to Watchlist</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+           
+            </div>
+          </div>
+          <h3>Popular clips</h3>
+          <div class="popular-container"></div>
+          <h3>Specials</h3>
+          <div class="specials-container"></div>
+          <h3>Sunday Specials</h3>
+          <div class="sunday-container"></div>
+          <h3>More Like This</h3>
+          <div class="related-container"></div>
+        </div>
+      </div>
+
+      <div
+        id="footer"
+        style="background-color: red; height: 50px; text-align: center"
+      >
+        <h1>footer</h1>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/4cb3271378.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+<script src="detailsPage.js"></script>
+<script
+src="https://kit.fontawesome.com/bd6b389e1a.js"
+crossorigin="anonymous"
+></script>
+<script>
+window.onscroll = function () {
+  myFunction();
+};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
