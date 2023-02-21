@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="credit.css">
+    <title>Pyament page</title>
+</head>
+<body>
+    <div class="overlay"></div>
+    <header>
+        <img src="https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo.svg" alt="">
+    </header>
+    <div id="heading">
+        <p>Super Plan</p>
+         <p>You're paying ₹899 for this transaction.
+            Get access to all content - Live Sports, Movies, TV. Watch on any 2 devices at FHD (1080p) resolution.</p>
+    </div>
+     
+
+    <form>
+        <div>
+            <input type="name" id="name" placeholder="Card Holder Name"/>
+        </div>
+        <div>
+            <input type="number" id="number" placeholder="Valid Card Number"/>
+        </div>
+        <div>
+            <input type="name" id="date" placeholder="MM/YY"><input type="number" id="cvv" placeholder="CVV">
+        </div>
+        <div>
+            <input type="checkbox">
+            <p>I am over 18, and I agree to the above conditions and the <span>Terms of use</span>  and <span> Privacy policy</span</p>
+        </div>
+        <div>
+            <input type="submit"  value="STRAT MEMBERSHIP">
+        </div>
+    </form>
+
+     <div id="last">
+        <p>You will be charged ₹899 once a year until you cancel.
+            By proceeding, I confirm that I am over 18, and I agree to thes <span>Terms of use</span>  and <span> Privacy policy</span></p>
+     </div>
+     
+
+     <div class="success">
+        <h1>*°• Payment Successful! •°*</h1>
+        <h1 id="symbol">😊</h1>   
+        <span id ="danger" onclick="closepopUp()">&times;</span>
+    </div>
+    
+</body>
+</html>
+<script src="credit.js"></script>
+<script>
+   alert("Card holder's Name : - kamal verma, Card Number : - 12345678, Valid Date : - 24/23, CVV number : - 123")
+</script>

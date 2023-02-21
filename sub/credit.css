@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(238,238,238);
+}
+header{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(238,238,238);
+    margin-top: -100px;
+   
+}
+header img{
+    position: fixed;
+    z-index: 1000;
+    margin-top: 10px;
+}
+#heading{
+    text-align: center;
+    width: 20%;
+   
+    margin: auto;
+    
+}
+#heading p{
+    margin-top: 100px;
+    font-family: Roboto, HelveticaNeue-Light, sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 14px;
+    color: rgba(0, 0, 0, 0.5);
+}
+#heading p:last-child{
+   
+    margin-top: 10px;
+}
+#heading p:first-child{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#last{
+    width: 20%;
+    margin: auto;
+    font-size: 10px;
+    margin-top: 20px;
+    line-height: 14px;
+    color:rgba(0, 0, 0, 0.5);
+}
+form{
+    width: 20%;
+    margin: auto;
+    margin-top: 20px;
+}
+form div:nth-child(3){
+    display: flex;
+    justify-content: space-between;  
+}
+form div:nth-child(3) input:last-child{
+    margin-right: -35px;
+    margin-left: 10px;
+}
+form >div input{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: rgb(238,238,238);
+    border-bottom: 1px solid rgb(31,128,224);
+}
+form >div input:focus{
+    outline: none;
+}
+
+form >div:last-child input{
+    width: 113%;
+    background-color: rgb(31,128,224);
+    color: white;
+    border-radius: 3px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+form>div:nth-child(4){
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+form>div:nth-child(4) input{
+    width: 30px;
+    margin: px;
+}
+form>div:nth-child(4) p{
+    width: 100%;
+    font-size: 12px;
+    margin: 20px;
+    margin-top: 21px;
+}
+span{
+    color: rgb(31,128,224);
+}
+
+.overlay{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.767);
+    z-index: -1;
+    opacity: 0;
+    transition: 0s;
+}
+.showoverlay{
+  opacity: 1;
+  z-index: 5;
+}
+
+#symbol{
+    font-size: 180px;
+    margin-top: -10px;
+  }
+    .success{
+      width: 600px;
+      height: 420px;
+      position: absolute;
+      left: -50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px 5px white;
+      background-color:rgb(86, 119, 138);
+    }
+    .showSuccess{
+      left: 50%;
+      z-index: 20;
+    }
+    .success div h1{
+      color: white;
+      display: flex;
+      text-align: center;
+      padding: 55px;
+      margin-top: -50px;
+      /* width: 100%; */
+      /* margin: auto; */
+      
+    } 
+    .success div img{
+      padding: 20px;
+    }
+    #danger{
+      width: 110px;
+      height: 60px;
+      color: white;
+      /* padding: 50px; */
+      font-size: 50px;
+      position: absolute;
+      left: 41%;
+      top: 75%;
+      text-align: center;
+      background-color: grey;
+      border-radius: 5px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    #danger:hover{
+      background-color: black;
+    }
+    h1{
+      text-align: center;
+      margin-top: 20px;
+      font-size: 50px;
+      color:black;
+      font-weight: bold;
+    }
