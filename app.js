@@ -71,7 +71,7 @@ displaycards()
 
 function displaycards(){
 // recommended 
-    Rcard.map(function(ele,index){
+    Rcard.map(function(ele,index,arr){
     let cdiv = document.createElement("div")
     let cdiv1 = document.createElement("div")
     cdiv1.setAttribute("id","card-body")
@@ -95,12 +95,24 @@ function displaycards(){
       ch2.className = "name"
       ch6.className="des"
       cbtn.className="watchlist-btn"
+
+      let btn = document.querySelectorAll(".card div")
+        btn[index].addEventListener("click",bac)
       
+       function bac(){
+        let obj = {
+            arr : arr,
+            ele : ele
+        }
+        localStorage.setItem("view-det",JSON.stringify(obj))
+        
+        console.log(obj)
+        }
       
 })
 
 // Thriller movies
-ThrillerMovies.map(function(ele,index){
+ThrillerMovies.map(function(ele,index,arr){
     let cdiv = document.createElement("div")
     let cdiv1 = document.createElement("div")
     let cimg = document.createElement("img")
@@ -123,11 +135,25 @@ ThrillerMovies.map(function(ele,index){
       ch2.className = "name"
       ch6.className="des"
       cbtn.className="watchlist-btn"
+      cdiv1.setAttribute("id","detel-1")
+      
+      let btn = document.querySelectorAll("#detel-1")
+        btn[index].addEventListener("click",bac)
+      
+       function bac(){
+        let obj = {
+            arr : arr,
+            ele : ele
+        }
+        localStorage.setItem("view-det",JSON.stringify(obj))
+        
+        console.log(obj)
+        }
 })
 
 
 // Latest & Trending
-Lcard.map(function(ele,index){
+Lcard.map(function(ele,index,arr){
     let cdiv = document.createElement("div")
     let cdiv1 = document.createElement("div")
     let cimg = document.createElement("img")
@@ -150,10 +176,24 @@ Lcard.map(function(ele,index){
       ch2.className = "name"
       ch6.className="des"
       cbtn.className="watchlist-btn"
+      cdiv1.setAttribute("id","detel-2")
+
+      let btn = document.querySelectorAll("#detel-2")
+        btn[index].addEventListener("click",bac)
+      
+       function bac(){
+        let obj = {
+            arr : arr,
+            ele : ele
+        }
+        localStorage.setItem("view-det",JSON.stringify(obj))
+        
+        console.log(obj)
+        }
 })
 
 // Popular in Biopic
-PopularBioPic.map(function(ele,index){
+PopularBioPic.map(function(ele,index,arr){
     let cdiv = document.createElement("div")
     let cdiv1 = document.createElement("div")
     let cimg = document.createElement("img")
@@ -176,10 +216,24 @@ PopularBioPic.map(function(ele,index){
       ch2.className = "name"
       ch6.className="des"
       cbtn.className="watchlist-btn"
+      cdiv1.setAttribute("id","detel-3")
+
+      let btn = document.querySelectorAll("#detel-3")
+        btn[index].addEventListener("click",bac)
+      
+       function bac(){
+        let obj = {
+            arr : arr,
+            ele : ele
+        }
+        localStorage.setItem("view-det",JSON.stringify(obj))
+        
+        console.log(obj)
+        }
 })
 
  // New Movies for You
- NewMovies.map(function(ele,index){
+ NewMovies.map(function(ele,index,arr){
     let cdiv = document.createElement("div")
     let cdiv1 = document.createElement("div")
     let cimg = document.createElement("img")
@@ -202,10 +256,24 @@ PopularBioPic.map(function(ele,index){
       ch2.className = "name"
       ch6.className="des"
       cbtn.className="watchlist-btn"
+      cdiv1.setAttribute("id","detel-4")
+
+      let btn = document.querySelectorAll("#detel-4")
+        btn[index].addEventListener("click",bac)
+      
+       function bac(){
+        let obj = {
+            arr : arr,
+            ele : ele
+        }
+        localStorage.setItem("view-det",JSON.stringify(obj))
+        
+        console.log(obj)
+        }
 })
 
   // Top Rated on IMDb
-ThrillerMovies.map(function(ele,index){
+ThrillerMovies.map(function(ele,index,arr){
     let cdiv = document.createElement("div")
     let cdiv1 = document.createElement("div")
     let cimg = document.createElement("img")
@@ -228,10 +296,24 @@ ThrillerMovies.map(function(ele,index){
       ch2.className = "name"
       ch6.className="des"
       cbtn.className="watchlist-btn"
+      cdiv1.setAttribute("id","detel-5")
+
+      let btn = document.querySelectorAll("#detel-5")
+        btn[index].addEventListener("click",bac)
+      
+       function bac(){
+        let obj = {
+            arr : arr,
+            ele : ele
+        }
+        localStorage.setItem("view-det",JSON.stringify(obj))
+        
+        console.log(obj)
+        }
 })
 
     // Disney Movies
-ThrillerMovies.map(function(ele,index){
+ThrillerMovies.map(function(ele,index,arr){
     let cdiv = document.createElement("div")
     let cdiv1 = document.createElement("div")
     let cimg = document.createElement("img")
@@ -254,9 +336,23 @@ ThrillerMovies.map(function(ele,index){
       ch2.className = "name"
       ch6.className="des"
       cbtn.className="watchlist-btn"
+      cdiv1.setAttribute("id","detel-6")
+
+      let btn = document.querySelectorAll("#detel-6")
+        btn[index].addEventListener("click",bac)
+      
+       function bac(){
+        let obj = {
+            arr : arr,
+            ele : ele
+        }
+        localStorage.setItem("view-det",JSON.stringify(obj))
+        
+        console.log(obj)
+        }
 })
    // Best of Superheroes
-ThrillerMovies.map(function(ele,index){
+ThrillerMovies.map(function(ele,index,arr){
     let cdiv = document.createElement("div")
     let cdiv1 = document.createElement("div")
     let cimg = document.createElement("img")
@@ -279,10 +375,24 @@ ThrillerMovies.map(function(ele,index){
       ch2.className = "name"
       ch6.className="des"
       cbtn.className="watchlist-btn"
+      cdiv1.setAttribute("id","detel-7")
+
+      let btn = document.querySelectorAll("#detel-7")
+        btn[index].addEventListener("click",bac)
+      
+       function bac(){
+        let obj = {
+            arr : arr,
+            ele : ele
+        }
+        localStorage.setItem("view-det",JSON.stringify(obj))
+        
+        console.log(obj)
+        }
 })
 
     // Popular Movies
-ThrillerMovies.map(function(ele,index){
+ThrillerMovies.map(function(ele,index,arr){
     let cdiv = document.createElement("div")
     let cdiv1 = document.createElement("div")
     let cimg = document.createElement("img")
@@ -305,10 +415,24 @@ ThrillerMovies.map(function(ele,index){
       ch2.className = "name"
       ch6.className="des"
       cbtn.className="watchlist-btn"
+      cdiv1.setAttribute("id","detel-8")
+
+      let btn = document.querySelectorAll("#detel-8")
+        btn[index].addEventListener("click",bac)
+      
+       function bac(){
+        let obj = {
+            arr : arr,
+            ele : ele
+        }
+        localStorage.setItem("view-det",JSON.stringify(obj))
+        
+        console.log(obj)
+        }
 })
 
   // Exclusive Indian Movies
-ThrillerMovies.map(function(ele,index){
+ThrillerMovies.map(function(ele,index,arr){
     let cdiv = document.createElement("div")
     let cdiv1 = document.createElement("div")
     let cimg = document.createElement("img")
@@ -331,7 +455,23 @@ ThrillerMovies.map(function(ele,index){
       ch2.className = "name"
       ch6.className="des"
       cbtn.className="watchlist-btn"
+      cdiv1.setAttribute("id","detel-9")
+
+      let btn = document.querySelectorAll("#detel-9")
+        btn[index].addEventListener("click",bac)
+      
+       function bac(){
+        let obj = {
+            arr : arr,
+            ele : ele
+        }
+        localStorage.setItem("view-det",JSON.stringify(obj))
+        
+        console.log(obj)
+        }
 })
+
+  
 }
 
 
@@ -375,8 +515,3 @@ McardContainers.forEach((item, i) => {
     })
 })
 
-document.getElementById("#card-body").addEventListener("click",backend)
-
-      function backend(){
-      console.log("fi....")
-      }

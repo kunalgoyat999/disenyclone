@@ -62,6 +62,7 @@ body{
     padding-left: 50px;
     text-transform: capitalize;
     margin-top: 80px;
+    overflow: hidden;
 }
 
 .movie-des{
@@ -71,6 +72,9 @@ body{
     margin-top: 30px;
     opacity: 0.8;
     /* color: red; */
+    line-height: 1.5em;
+    height: 3em;       /* height is 2x line-height, so two lines will display */
+    overflow: hidden;
 }
 .video-card-container{
     position: relative;
@@ -80,6 +84,7 @@ body{
     display: flex;
     margin-bottom: 20px;
     justify-content: space-between;
+    /* border: 1px solid red; */
 }
 
 .video-card{
@@ -115,7 +120,7 @@ body{
     font-size: 22px;
     font-weight: 700;
     /* background-color: red; */
-    width: 30%;
+    /* width: 30%; */
 }
 
 .title:hover{
@@ -250,7 +255,7 @@ body{
     top: 0;
     width: 5%;
     height: 100%;
-    z-index: 2;
+    z-index: 5;
     border: none;
     cursor: pointer;
     outline: none;
