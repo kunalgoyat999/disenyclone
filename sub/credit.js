@@ -5,7 +5,8 @@ function showpopUp(){
 function closepopUp(){
     document.querySelector(".success").classList.remove("showSuccess");
     document.querySelector(".overlay").classList.remove("showoverlay");
-    window.location.href="index.html" ;
+    window.location.href="/disenyclone/index.html" ;
+    
 }
 
 document.querySelector("form").addEventListener("submit",cardDetail);
