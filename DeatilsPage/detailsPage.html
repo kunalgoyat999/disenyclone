@@ -10,21 +10,39 @@
     <link rel="stylesheet" href="detailsPage.css" />
   </head>
   <body>
-    <div id="wrapper">
-      <div
-        id="nav-section"
-        style="
-          height: 50px;
-          z-index: 100;
-          position: fixed;
-          background-color: red;
-          color: white;
-          text-align: center;
-          width: 100%;
-        "
-      >
-        <h2>NavBar</h2>
+
+    <nav class="navbar">
+      <i class="fa-solid fa-bars" id="icon"></i>
+      <img
+        src="https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg"
+        class="brand-logo"
+        alt=""
+      />
+      <button class="sub-btn1">Subscribe</button>
+      <ul class="nav-links">
+        <li class="nav-items"><a href="#"> TV</a></li>
+        <li class="nav-items"><a href="#"> Movies</a></li>
+        <li class="nav-items"><a href="#"> Sporst</a></li>
+        <li class="nav-items"><a href="#"> Disney+</a></li>
+        <li class="nav-items">
+          <a href="#">
+            <img
+              src="https://www.hotstar.com/assets/4aa70ede8904e16b7630300c09219c8e.svg"
+            />
+          </a>
+        </li>
+      </ul>
+
+      <div class="right-container">
+        <input type="text" class="search-box" placeholder="Search" />
+        <button class="sub-btn">Subscribe</button>
+        <a href="#" class="login-link">login</a>
       </div>
+    </nav>
+
+
+    <div id="wrapper">
+      
 
       <br />
       <br />
@@ -147,3 +165,23 @@
 </html>
 
 <script src="detailsPage.js"></script>
+<script
+src="https://kit.fontawesome.com/bd6b389e1a.js"
+crossorigin="anonymous"
+></script>
+<script>
+window.onscroll = function () {
+  myFunction();
+};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
