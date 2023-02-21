@@ -19,6 +19,7 @@ const createSlide = () => {
       imgElement.appendChild(document.createTextNode(''));
       h1.appendChild(document.createTextNode(movies[slideIndex].name));
       p.appendChild(document.createTextNode(movies[slideIndex].des));
+      
       content.appendChild(h1);
       content.appendChild(p);
       slide.appendChild(content);
