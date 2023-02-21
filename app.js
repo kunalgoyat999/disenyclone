@@ -74,6 +74,7 @@ function displaycards(){
     Rcard.map(function(ele,index){
     let cdiv = document.createElement("div")
     let cdiv1 = document.createElement("div")
+    cdiv1.setAttribute("id","card-body")
     let cimg = document.createElement("img")
     cimg.src = ele.image
     let ch2 = document.createElement("h2")
@@ -94,6 +95,8 @@ function displaycards(){
       ch2.className = "name"
       ch6.className="des"
       cbtn.className="watchlist-btn"
+      
+      
 })
 
 // Thriller movies
@@ -372,3 +375,8 @@ McardContainers.forEach((item, i) => {
     })
 })
 
+document.getElementById("#card-body").addEventListener("click",backend)
+
+      function backend(){
+      console.log("fi....")
+      }
