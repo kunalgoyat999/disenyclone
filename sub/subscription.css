@@ -77,7 +77,7 @@ h4{
 }
 .login #flex #first-div>div{
     border-bottom: 0.1px solid rgba(68, 70, 75, 0.808);
-    /* height: 0px; */
+
     padding-bottom: 10px;
 }
 
@@ -122,7 +122,10 @@ h4{
     flex-direction: column;
     gap: 10px;
 }
-img{
+#second-div img{
+    width: 20px;
+}
+#thrid-div img{
     width: 20px;
 }
 #thrid-div >div{
@@ -149,8 +152,7 @@ img{
     background-color: rgb(23,67,115);
 }
 #offer>div:nth-child(2){
-    /* margin-left: 100px;
-    margin-right: 100px; */
+
     border: 1px solid rgba(3, 12, 34, 0.699);
     border-radius: 5px;
     width: 150px;
