@@ -105,7 +105,7 @@ function displaycards(){
             ele : ele
         }
         localStorage.setItem("view-det",JSON.stringify(obj))
-        
+         window.location.assign("/disenyclone/DeatilsPage/detailsPage.html")
         console.log(obj)
         }
       
@@ -146,7 +146,7 @@ ThrillerMovies.map(function(ele,index,arr){
             ele : ele
         }
         localStorage.setItem("view-det",JSON.stringify(obj))
-        
+         window.location.assign("/disenyclone/DeatilsPage/detailsPage.html")
         console.log(obj)
         }
 })
@@ -187,7 +187,7 @@ Lcard.map(function(ele,index,arr){
             ele : ele
         }
         localStorage.setItem("view-det",JSON.stringify(obj))
-        
+         window.location.assign("/disenyclone/DeatilsPage/detailsPage.html")
         console.log(obj)
         }
 })
@@ -227,7 +227,7 @@ PopularBioPic.map(function(ele,index,arr){
             ele : ele
         }
         localStorage.setItem("view-det",JSON.stringify(obj))
-        
+         window.location.assign("/disenyclone/DeatilsPage/detailsPage.html")
         console.log(obj)
         }
 })
@@ -267,7 +267,7 @@ PopularBioPic.map(function(ele,index,arr){
             ele : ele
         }
         localStorage.setItem("view-det",JSON.stringify(obj))
-        
+         window.location.assign("/disenyclone/DeatilsPage/detailsPage.html")
         console.log(obj)
         }
 })
@@ -307,7 +307,7 @@ ThrillerMovies.map(function(ele,index,arr){
             ele : ele
         }
         localStorage.setItem("view-det",JSON.stringify(obj))
-        
+         window.location.assign("/disenyclone/DeatilsPage/detailsPage.html")
         console.log(obj)
         }
 })
@@ -347,7 +347,7 @@ ThrillerMovies.map(function(ele,index,arr){
             ele : ele
         }
         localStorage.setItem("view-det",JSON.stringify(obj))
-        
+         window.location.assign("/disenyclone/DeatilsPage/detailsPage.html")
         console.log(obj)
         }
 })
@@ -386,7 +386,7 @@ ThrillerMovies.map(function(ele,index,arr){
             ele : ele
         }
         localStorage.setItem("view-det",JSON.stringify(obj))
-        
+         window.location.assign("/disenyclone/DeatilsPage/detailsPage.html")
         console.log(obj)
         }
 })
@@ -426,7 +426,7 @@ ThrillerMovies.map(function(ele,index,arr){
             ele : ele
         }
         localStorage.setItem("view-det",JSON.stringify(obj))
-        
+        window.location.assign("/disenyclone/DeatilsPage/detailsPage.html")
         console.log(obj)
         }
 })
@@ -466,7 +466,7 @@ ThrillerMovies.map(function(ele,index,arr){
             ele : ele
         }
         localStorage.setItem("view-det",JSON.stringify(obj))
-        
+        window.location.assign("/disenyclone/DeatilsPage/detailsPage.html")
         console.log(obj)
         }
 })
