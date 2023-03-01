@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./sub/subscription.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="loginpage.css">
+
+    <title>Disney +</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <i class="fa-solid fa-bars" id="icon"></i>
+        <a href="">
+            <img src="https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg"
+                class="brand-logo" alt="" />
+        </a>
+        <button class="sub-btn1">Subscribe</button>
+        <ul class="nav-links">
+            <li class="nav-items"><a href="./category/category.html"> TV</a></li>
+            <li class="nav-items"><a href="./category/category.html"> Movies</a></li>
+            <li class="nav-items"><a href="./category/category.html"> Sporst</a></li>
+            <li class="nav-items"><a href="./category/category.html"> Disney+</a></li>
+            <li class="nav-items">
+                <a href="#">
+                    <img src="https://www.hotstar.com/assets/4aa70ede8904e16b7630300c09219c8e.svg" />
+                </a>
+            </li>
+        </ul>
+
+        <div class="right-container">
+            <input type="text" class="search-box" placeholder="Search" />
+            <button onclick="ShowPopup()" class="sub-btn">Subscribe</button>
+            <a href="#" class="login-link" onclick="showpopUps()">login</a>
+        </div>
+    </nav>
+
+    <div class="popup">
+        <div class="overlay"></div>
+        <!-- <button >Subscription</button> -->
+        <h4 class="h4tag">Subscribe to watch all content on Disney+ Hotstar</h4>
+        <div class="login">
+            <div id="flex">
+                <div id="first-div">
+                    <div>
+                        <p>All content</p>
+                        <h6>Movies, live sports, TV, Specials</h6>
+                    </div>
+
+                    <div>
+                        <p>Watch on TV or Laptop</p>
+                    </div>
+
+                    <div>
+                        <p>Ads free movies and shows (except sports)</p>
+                    </div>
+
+                    <div>
+                        <p>Number of devices that can be logged in</p>
+                    </div>
+
+                    <div>
+                        <p>Max video quality</p>
+                    </div>
+
+                    <div>
+                        <p>Max audio quality</p>
+                    </div>
+
+
+
+                </div>
+                <div id="second-div" class="active">
+                    <span id="top-right">&#10004</span>
+                    <p id="super" style="color:rgb(247, 179, 7);">super</p>
+
+                    <div>
+                        <img src="https://secure-media.hotstar.com/static/subscription/paywall_service/comparator/tick/smp/web-1x.png"
+                            alt="">
+                        <img src="https://secure-media.hotstar.com/static/subscription/paywall_service/comparator/tick/smp/web-1x.png"
+                            alt="">
+                        <img src="https://secure-media.hotstar.com/static/subscription/paywall_service/comparator/cross/smp/web-1x.png"
+                            alt="">
+                        <p>2</p>
+                        <p>Full HD (1080p)</p>
+                        <p>Dolby 5.1</p>
+                    </div>
+
+                </div>
+                <div id="thrid-div">
+                    <p id="super">Premium</p>
+                    <div>
+                        <img src="https://secure-media.hotstar.com/static/subscription/paywall_service/comparator/tick/smp/web-1x.png"
+                            alt="">
+                        <img src="https://secure-media.hotstar.com/static/subscription/paywall_service/comparator/tick/smp/web-1x.png"
+                            alt="">
+                        <img src="https://secure-media.hotstar.com/static/subscription/paywall_service/comparator/tick/smp/web-1x.png"
+                            alt="">
+
+                        <p>4</p>
+                        <p>4K (2160p)</p>
+                        <p>Dolby 5.1</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div id="offer">
+                <div class="active">
+                    <p style="color:rgb(247, 179, 7);">Super</p>
+                    <p>₹899/Year</p>
+                    <span id="right">&#10004</span>
+                </div>
+                <div>
+                    <p>Premium</p>
+                    <p>₹1499/Year</p>
+                </div>
+                <div>
+                    <p>Premium</p>
+                    <p>₹299/Month</p>
+                </div>
+
+
+            </div>
+
+            <button id="btn" onclick="window.location.href='/disenyclone/sub/payment.html'">CONTINUE WITH PREMIUM >
+            </button>
+
+            <div id="detail">
+                <p>Logged in with <span id="numbers"></span> </p>
+                <a href="login.html">continue with another account</a>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="overlays"></div>
+    <!-- <div id="logindata"> -->
+       <div class="logins">
+      
+
+           <span id ="crosss" onclick="closepopUpss()" >&times;</span>
+
+
+       <form>
+          
+           <!-- <div> -->
+               <!-- <div> -->
+                   <h3>Login to continue</h3>
+                   <input type="number" id="num"  placeholder="Enter your mobile number.."/>
+                 <a href="./otp.html" id="otp-red"> <input  type="submit" id="button" value="Send OTP" /></a>
+                 <h3 style="font-size: 10px; margin-top: -8px;">by processing you agree to the <span style="color:rgb(29,110,209) ;"> terms of use</span> and <span style="color:rgb(29,110,209) ;">privacy plicy</span> </h3>
+               <!-- </div> -->
+
+           <!-- </div> -->
+           
+       </form>
+
+   <!-- </div> -->
+    </div>
+
+    <div class="carousel-container">
+        <!-- <button class="pre-btn" id="carousel-pre-btn"><img src="images/pre.png" alt=""></button>
+      <button class="nxt-btn" id="carousel-nxt-btn"><img src="images/nxt.png" alt=""></button> -->
+        <div class="carousel">
+            <!-- <div class="slider">
+              <div class="slider-content">
+            <h1 class="movie-title">Black Panther</h1>
+            <p class="movie-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, ducimus impedit. Officiis aut quasi, molestiae
+               reprehenderit quod a fugit quam voluptatem, atque</p>
+              </div>
+               <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/5695/1465695-h-71debc5acc27" alt="">
+            </div> -->
+        </div>
+    </div>
+
+    <!-- hover video content -->
+    <div class="video-card-container">
+        <div class="video-card">
+            <img src="images/disney.PNG" class="video-card-image" alt="">
+            <video src="videos/disney.mp4" mute loop class="card-video"></video>
+        </div>
+        <div class="video-card">
+            <img src="images/pixar.PNG" class="video-card-image" alt="">
+            <video src="videos/pixar.mp4" mute loop class="card-video"></video>
+        </div>
+        <div class="video-card">
+            <img src="images/marvel.PNG" class="video-card-image" alt="">
+            <video src="videos/marvel.mp4" mute loop class="card-video"></video>
+        </div>
+        <div class="video-card">
+            <img src="images/star-wars.PNG" class="video-card-image" alt="">
+            <video src="videos/star-war.mp4" mute loop class="card-video"></video>
+        </div>
+        <div class="video-card">
+            <img src="images/geographic.PNG" class="video-card-image" alt="">
+            <video src="videos/geographic.mp4" mute loop class="card-video"></video>
+        </div>
+    </div>
+
+    <!-- below cards of catagory  -->
+    <h1 class="title">recommended for you</h1>
+    <div class="movies-list">
+        <button class="pre-btn"><img src="images/pre.png" alt=""></button>
+        <button class="nxt-btn"><img src="images/nxt.png" alt=""></button>
+        <div class="card-container">
+          
+        </div>
+    <!-- </div> -->
+
+    <!-- Thriller Movies -->
+    <h1 class="title">Thriller Movies</h1>
+    <div class="movies-list">
+        <button class="pre-btn"><img src="images/pre.png" alt=""></button>
+        <button class="nxt-btn"><img src="images/nxt.png" alt=""></button>
+        <div class="card-container" id="t-m">
+            <!-- <div class="card">
+              <img src="images/poster 1.png" class="card-img" alt="">
+              <div class="card-body">
+                  <h2 class="name">movie name</h2>
+                  <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                  <button class="watchlist-btn">add to watchlist</button>
+              </div>
+          </div> 
+          ...20+ more cards -->
+        </div>
+    <!-- </div> -->
+
+    <!-- 3rd row -->
+    <h1 class="title">Latest & Trending</h1>
+    <div class="movies-list">
+        <button class="pre-btn"><img src="images/pre.png" alt=""></button>
+        <button class="nxt-btn"><img src="images/nxt.png" alt=""></button>
+        <div class="card-container" id="t3-m">
+            <!-- <div class="card">
+             <img src="images/poster 1.png" class="card-img" alt="">
+             <div class="card-body">
+                 <h2 class="name">movie name</h2>
+                 <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                 <button class="watchlist-btn">add to watchlist</button>
+             </div>
+         </div> 
+         ...20+ more cards -->
+     </div>
+     <!-- 4rd row -->
+     <h1 class="title">Popular in Biopic</h1>
+     <div class="movies-list">
+         <button class="pre-btn"><img src="images/pre.png" alt=""></button>
+         <button class="nxt-btn"><img src="images/nxt.png" alt=""></button>
+         <div class="card-container" id="t4-m">
+             <!-- <div class="card">
+                 <img src="images/poster 1.png" class="card-img" alt="">
+                 <div class="card-body">
+                     <h2 class="name">movie name</h2>
+                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                     <button class="watchlist-btn">add to watchlist</button>
+                 </div>
+             </div> 
+             ...20+ more cards -->
+            </div>
+            <!-- 5rd row -->
+            <h1 class="title">New Movies for You</h1>
+            <div class="movies-list">
+                <button class="pre-btn"><img src="images/pre.png" alt=""></button>
+                <button class="nxt-btn"><img src="images/nxt.png" alt=""></button>
+                <div class="card-container" id="t5-m">
+                    <!-- <div class="card">
+                  <img src="images/poster 1.png" class="card-img" alt="">
+                  <div class="card-body">
+                      <h2 class="name">movie name</h2>
+                      <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                      <button class="watchlist-btn">add to watchlist</button>
+                  </div>
+              </div> 
+              ...20+ more cards -->
+                </div>
+                <!-- 6rd row -->
+                <h1 class="title">Top Rated on IMDb</h1>
+                <div class="movies-list">
+                    <button class="pre-btn"><img src="images/pre.png" alt=""></button>
+                    <button class="nxt-btn"><img src="images/nxt.png" alt=""></button>
+                    <div class="card-container" id="t6-m">
+                        <!-- <div class="card">
+                  <img src="images/poster 1.png" class="card-img" alt="">
+                  <div class="card-body">
+                      <h2 class="name">movie name</h2>
+                      <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                      <button class="watchlist-btn">add to watchlist</button>
+                  </div>
+              </div> 
+              ...20+ more cards -->
+                    </div>
+                    <!-- 7rd row -->
+                    <h1 class="title">Disney Movies</h1>
+                    <div class="movies-list">
+                        <button class="pre-btn"><img src="images/pre.png" alt=""></button>
+                        <button class="nxt-btn"><img src="images/nxt.png" alt=""></button>
+                        <div class="card-container" id="t7-m">
+                            <!-- <div class="card">
+                  <img src="images/poster 1.png" class="card-img" alt="">
+                  <div class="card-body">
+                      <h2 class="name">movie name</h2>
+                      <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                      <button class="watchlist-btn">add to watchlist</button>
+                  </div>
+              </div> 
+              ...20+ more cards -->
+                        </div>
+                        <!-- 8rd row -->
+                        <h1 class="title">Best of Superheroes</h1>
+                        <div class="movies-list">
+                            <button class="pre-btn"><img src="images/pre.png" alt=""></button>
+                            <button class="nxt-btn"><img src="images/nxt.png" alt=""></button>
+                            <div class="card-container" id="t8-m">
+                                <!-- <div class="card">
+                  <img src="images/poster 1.png" class="card-img" alt="">
+                  <div class="card-body">
+                      <h2 class="name">movie name</h2>
+                      <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                      <button class="watchlist-btn">add to watchlist</button>
+                  </div>
+              </div> 
+              ...20+ more cards -->
+                            </div>
+                            <!-- 9rd row -->
+                            <h1 class="title">Popular Movies</h1>
+                            <div class="movies-list">
+                                <button class="pre-btn"><img src="images/pre.png" alt=""></button>
+                                <button class="nxt-btn"><img src="images/nxt.png" alt=""></button>
+                                <div class="card-container" id="t9-m">
+                                    <!-- <div class="card">
+                  <img src="images/poster 1.png" class="card-img" alt="">
+                  <div class="card-body">
+                      <h2 class="name">movie name</h2>
+                      <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                      <button class="watchlist-btn">add to watchlist</button>
+                  </div>
+              </div> 
+              ...20+ more cards -->
+                                </div>
+                                <!-- 10rd row -->
+                                <h1 class="title">Exclusive Indian Movies</h1>
+                                <div class="movies-list">
+                                    <button class="pre-btn"><img src="images/pre.png" alt=""></button>
+                                    <button class="nxt-btn"><img src="images/nxt.png" alt=""></button>
+                                    <div class="card-container" id="t10-m">
+                                        <!-- <div class="card">
+                  <img src="images/poster 1.png" class="card-img" alt="">
+                  <div class="card-body">
+                      <h2 class="name">movie name</h2>
+                      <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                      <button class="watchlist-btn">add to watchlist</button>
+                  </div>
+              </div> 
+              ...20+ more cards -->
+                                    </div>
+
+            <footer>
+                <div id="footer">
+                    <div id="left-divs" style="color:beige">
+                        <div>
+                            <p>About Disney+ Hotstar</p>
+                            <p>Terms Of Use</p>
+                            <p>Privacy Policy</p>
+                            <p>FAQ</p>
+                            <p>Feedback</p>
+                            <p>Careers</p>
+                        </div>
+                        <p>© 2023 STAR. All Rights Reserved. HBO, Home Box Office and all related channel and programming logos are service marks of, and all related programming visuals and elements are the property of, Home Box Office, Inc. All rights reserved.</p>
+    
+                    </div>
+                    <div id="right-divs" style=" color: azure;">
+                          <div id="lefts">
+                            <p>Connect with us</p>
+                            <div>
+                                <img src="https://img.icons8.com/fluency/1x/facebook-new.png" alt="">
+                                <img src="https://img.icons8.com/fluency/1x/twitter.png" alt="">
+                            </div>
+                          </div>
+                          <div id="rights">
+                            <div>
+                                <img src="https://img.icons8.com/doodle/1x/google-play.png" alt="">
+                                <p>Goole play</p>
+                            </div>
+                            <div>
+                                <img src="./apple.svg" alt="">
+                                <p>App Store</p>
+                            </div>
+                          </div>
+    
+                    </div>
+                </div>
+               
+            </footer>                        
+        
+</body>
+<script src="./sub/subscription.js"></script>
+<script src="./data.js"></script>
+<script src="./app.js"></script>
+
+</html>
+<script src="https://kit.fontawesome.com/bd6b389e1a.js" crossorigin="anonymous"></script>
+<script>
+    window.onscroll = function () {
+        myFunction();
+    };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky");
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
+<script src="loginpage.js"></script>
