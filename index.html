@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="./sub/subscription.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="loginpage.css">
 
     <title>Disney +</title>
 </head>
@@ -34,11 +36,11 @@
         <div class="right-container">
             <input type="text" class="search-box" placeholder="Search" />
             <button onclick="ShowPopup()" class="sub-btn">Subscribe</button>
-            <a href="#" class="login-link">login</a>
+            <a href="#" class="login-link" onclick="showpopUps()">login</a>
         </div>
     </nav>
 
-    <div>
+    <div class="popup">
         <div class="overlay"></div>
         <!-- <button >Subscription</button> -->
         <h4 class="h4tag">Subscribe to watch all content on Disney+ Hotstar</h4>
@@ -141,6 +143,31 @@
 
     </div>
 
+    <div class="overlays"></div>
+    <!-- <div id="logindata"> -->
+       <div class="logins">
+      
+
+           <span id ="crosss" onclick="closepopUpss()" >&times;</span>
+
+
+       <form>
+          
+           <!-- <div> -->
+               <!-- <div> -->
+                   <h3>Login to continue</h3>
+                   <input type="number" id="num"  placeholder="Enter your mobile number.."/>
+                 <a href="./otp.html" id="otp-red"> <input  type="submit" id="button" value="Send OTP" /></a>
+                 <h3 style="font-size: 10px; margin-top: -8px;">by processing you agree to the <span style="color:rgb(29,110,209) ;"> terms of use</span> and <span style="color:rgb(29,110,209) ;">privacy plicy</span> </h3>
+               <!-- </div> -->
+
+           <!-- </div> -->
+           
+       </form>
+
+   <!-- </div> -->
+    </div>
+
     <div class="carousel-container">
         <!-- <button class="pre-btn" id="carousel-pre-btn"><img src="images/pre.png" alt=""></button>
       <button class="nxt-btn" id="carousel-nxt-btn"><img src="images/nxt.png" alt=""></button> -->
@@ -215,6 +242,7 @@
           ...20+ more cards -->
         </div>
     </div>
+   
 
     <!-- 3rd row -->
     <h1 class="title">Latest & Trending</h1>
@@ -345,6 +373,44 @@
               ...20+ more cards -->
                                     </div>
 
+            <footer>
+                <div id="footer">
+                    <div id="left-divs" style="color:beige">
+                        <div>
+                            <p>About Disney+ Hotstar</p>
+                            <p>Terms Of Use</p>
+                            <p>Privacy Policy</p>
+                            <p>FAQ</p>
+                            <p>Feedback</p>
+                            <p>Careers</p>
+                        </div>
+                        <p>© 2023 STAR. All Rights Reserved. HBO, Home Box Office and all related channel and programming logos are service marks of, and all related programming visuals and elements are the property of, Home Box Office, Inc. All rights reserved.</p>
+    
+                    </div>
+                    <div id="right-divs" style=" color: azure;">
+                          <div id="lefts">
+                            <p>Connect with us</p>
+                            <div>
+                                <img src="https://img.icons8.com/fluency/1x/facebook-new.png" alt="">
+                                <img src="https://img.icons8.com/fluency/1x/twitter.png" alt="">
+                            </div>
+                          </div>
+                          <div id="rights">
+                            <div>
+                                <img src="https://img.icons8.com/doodle/1x/google-play.png" alt="">
+                                <p>Goole play</p>
+                            </div>
+                            <div>
+                                <img src="./apple.svg" alt="">
+                                <p>App Store</p>
+                            </div>
+                          </div>
+    
+                    </div>
+                </div>
+               
+            </footer>                        
+        
 </body>
 <script src="./sub/subscription.js"></script>
 <script src="./data.js"></script>
@@ -368,3 +434,4 @@
         }
     }
 </script>
+<script src="loginpage.js"></script>
